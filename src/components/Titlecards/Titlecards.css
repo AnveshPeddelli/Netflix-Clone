@@ -1,0 +1,44 @@
+.title-cards {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 12px;
+}
+
+.title-cards h2 {
+    margin-bottom: 8px;
+}
+
+.card-list {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;       /* Enables horizontal scrolling */
+    white-space: nowrap;    /* Ensures cards stay on a single line */
+    scroll-behavior: smooth; /* Smooth scrolling for better UX */
+}
+
+.card-list::-webkit-scrollbar {
+    display: none;          /* Hides the scrollbar for a cleaner look */
+}
+
+.card-list img {
+    width: 240px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card-list.card {
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;         /* Prevents the cards from shrinking */
+}
+
+.card-list.card p {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;           /* Ensures text is visible on the image */
+    background-color: rgba(0, 0, 0, 0.6); /* Optional: Adds a slight background for readability */
+    padding: 2px 6px;       /* Padding around the text for better visibility */
+    border-radius: 4px;     /* Rounded corners for the text background */
+    font-size: 14px;        /* Adjusts the font size for better readability */
+}
