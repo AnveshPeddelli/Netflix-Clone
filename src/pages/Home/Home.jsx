@@ -14,7 +14,7 @@ const Home = () => {
       <Navbar/>
         <div className="hero">
           <img src={hero_banner} alt="" className='banner-img'/>
-          <div className="hero-aption">
+          <div className="hero-caption">
             <img src={hero_title} alt="" className='caption-img'/>
             <p>Discovering his ties to a secret ancient order, 
               a young man living in modern Istanbul embarks on a quest 
@@ -27,10 +27,10 @@ const Home = () => {
           </div>
         </div>
         <div className="more-cards">
-          <Titlecards title={"Blockbuster Movies"}/>
-          <Titlecards title={"Only on Netflix"}/>
-          <Titlecards title={"Upcoming"}/>
-          <Titlecards title={"Top picks for you"}/>
+          <Titlecards title={"Blockbuster Movies"} category={"top_rated"}/>
+          <Titlecards title={"Only on Netflix"} category={"popular"}/>
+          <Titlecards title={"Upcoming"} category={"upcoming"}/>
+          <Titlecards title={"Top picks for you"} category={"now_playing"}/>
         </div>
         <Footer/>
     </div>
